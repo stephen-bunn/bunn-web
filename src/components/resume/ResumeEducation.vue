@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-card(flat max-width="600").resume__education.transparent
+  v-card(flat).resume__education.transparent
     v-card-title(primary-title)
       v-layout(column)
         div.headline {{ education.institution }}
@@ -43,5 +43,4 @@ export default class ResumeEducation extends Vue {
 }
 </script>
 
-<style lang="stylus">
-</style>
+<style lang="stylus"></style>

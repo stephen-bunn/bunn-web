@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-card(flat max-width="600").resume__publication.transparent
+  v-card(flat).resume__publication.transparent
     v-card-title(primary-title)
       v-layout(column)
         a(:href="publication.website" target="_blank").headline {{ publication.name }}
@@ -24,7 +24,7 @@ export default class ResumePublication extends Vue {
   }
 
   get duration(): string {
-    return this.releaseDate.fromNow(true)
+    return this.releaseDate.fromNow()
   }
 }
 </script>

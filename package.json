@@ -15,6 +15,7 @@
     "core-js": "^2.6.5",
     "feather-icons": "^4.21.0",
     "gravatar": "^1.8.0",
+    "helpful-decorators": "^2.0.4",
     "js-cookie": "^2.2.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",

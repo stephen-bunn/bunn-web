@@ -1,8 +1,6 @@
 <template lang="pug">
   v-app(:dark="dark")
     v-toolbar(app flat)
-      v-btn(icon flat @click="$router.push({name: 'home'})")
-        v-icon fe-home
       v-toolbar-items
         v-btn(flat :to="{name: 'resume'}")
           v-icon(left) fe-book-open
@@ -19,11 +17,12 @@
           v-icon {{ profileIcons[profile.network.toLowerCase()] }}
     v-content
       v-container(transparent)
-        v-layout(column align-center mb-5)
-          resume-avatar(:picture="$resume.basics.picture" :email="$resume.basics.email")
-          h1.headline {{ $resume.basics.label }}
-          dropin-title(:title="$resume.basics.name" @complete="showTabs")
-        router-view
+        scroll-button(fold target="body")
+          v-layout(column align-center mb-5)
+            resume-avatar(:picture="$resume.basics.picture" :email="$resume.basics.email")
+            h1.headline {{ $resume.basics.label }}
+            dropin-title(:title="$resume.basics.name" @complete="showTabs")
+          router-view
 </template>
 
 <script lang="ts">
@@ -33,8 +32,9 @@ import { Component, Vue, Watch } from "vue-property-decorator"
 import { JSONResume } from "@/plugins/resume/types"
 import ResumeAvatar from "@/components/resume/ResumeAvatar.vue"
 import DropinTitle from "@/components/DropinTitle.vue"
+import ScrollButton from "@/components/ScrollButton.vue"
 
-@Component({ name: "app", components: { ResumeAvatar, DropinTitle } })
+@Component({ name: "app", components: { ResumeAvatar, DropinTitle, ScrollButton } })
 export default class App extends Vue {
   private dark: boolean = false
   private profileIcons: { [key: string]: string } = {
@@ -67,6 +67,6 @@ export default class App extends Vue {
 </script>
 
 <style lang="stylus">
-@import "~@icon/feather/feather.css"
-@import "~@/assets/styles/main"
+@import '~@icon/feather/feather.css';
+@import '~@/assets/styles/main';
 </style>

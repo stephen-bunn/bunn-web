@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-card(flat max-width="600").resume__work.transparent
+  v-card(flat).resume__work.transparent
     v-card-title(primary-title)
       v-layout(column)
         div.headline {{ work.position }}
