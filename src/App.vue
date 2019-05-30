@@ -10,13 +10,16 @@
         v-btn(flat :to="{name: 'contact'}")
           v-icon(left) fe-at-sign
           span Contact
+        v-btn(flat :to="{name: 'projects'}")
+          v-icon(left) fe-box
+          span Projects
       v-spacer
       template(v-for="(profile, index) in $resume.basics.profiles")
         v-btn(icon flat :key="`profile-${index}`" :href="profile.url" target="_blank")
           v-icon {{ profileIcons[profile.network.toLowerCase()] }}
     v-content
       v-container(transparent)
-        v-layout(column align-center)
+        v-layout(column align-center mb-5)
           resume-avatar(:picture="$resume.basics.picture" :email="$resume.basics.email")
           h1.headline {{ $resume.basics.label }}
           dropin-title(:title="$resume.basics.name" @complete="showTabs")

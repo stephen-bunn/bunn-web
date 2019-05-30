@@ -7,6 +7,9 @@
           span.subheading at&nbsp;
           a(:href="work.website" target="_blank").subheading {{ work.company }}
           span.subheading &nbsp;for {{ duration }}
+          span(v-if="!endDate").subheading
+            span &nbsp;&mdash;&nbsp;
+            span.font-italic Current Position
     v-card-text
       v-layout(column)
         v-flex
