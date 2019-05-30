@@ -8,9 +8,9 @@
         v-btn(flat :to="{name: 'contact'}")
           v-icon(left) fe-at-sign
           span Contact
-        v-btn(flat :to="{name: 'projects'}")
-          v-icon(left) fe-box
-          span Projects
+        //- v-btn(flat :to="{name: 'projects'}")
+        //-   v-icon(left) fe-box
+        //-   span Projects
       v-spacer
       template(v-for="(profile, index) in $resume.basics.profiles")
         v-btn(icon flat :key="`profile-${index}`" :href="profile.url" target="_blank")

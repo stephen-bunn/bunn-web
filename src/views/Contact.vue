@@ -1,17 +1,17 @@
 <template lang="pug">
   div.contact__container
 
-    div
-      span.body-1 You can contact me at any time. I'm available most daytime hours (
-      a.body-1(href="https://time.is/EDT" target="_blank") EDT
-      span.body-1 ).
+    v-flex(mb-4)
+      span.body-1.font-weight-bold Feel free to contact me at any time!
+      div
+        span I'm available most daytime hours (
+        a.body-1(href="https://time.is/EDT" target="_blank") EDT
+        span.body-1 ) and am open to all opportunities.
 
-    v-list
-      v-list-tile(tag="a" v-for="(item, itemIndex) in contactItems" v-if="item.value" :key="`contact-item-${itemIndex}`" :href="item.link" :target="item.target || ''")
-        v-list-tile-action
-          v-icon {{ item.icon }}
-        v-list-tile-content
-          v-list-tile-title {{ item.value }}
+    v-flex(v-for="(item, itemIndex) in contactItems" v-if="item.value" :key="`contact-item-${itemIndex}`")
+      span
+        v-icon(left) {{ item.icon }}
+        a(:href="item.link" :target="item.target || ''").headline {{ item.value }}
 
 </template>
 
@@ -25,11 +25,20 @@ export default class Contact extends Vue {
       {
         icon: "fe-phone",
         value: this.$resume.basics.phone,
-        link: `phone:${this.$resume.basics.phone}`,
+        link: `tel:${this.$resume.basics.phone}`,
+      },
+      {
+        icon: "fe-mail",
+        value: this.$resume.basics.email,
+        link: `mailto:${this.$resume.basics.email}`,
       },
     ]
   }
 }
 </script>
 
-<style lang="stylus"></style>
+<style lang="stylus">
+.contact__container {
+  width: 600px;
+}
+</style>
