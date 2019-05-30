@@ -55,6 +55,7 @@ export default class App extends Vue {
       targets: ".tab",
       opacity: [0, 1],
       direction: "normal",
+      // @ts-ignore
       delay: this.$anime.stagger(100),
       duration: 1000,
     })
