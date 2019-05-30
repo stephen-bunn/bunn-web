@@ -76,7 +76,7 @@ import ResumeLanguage from "@/components/resume/ResumeLanguage.vue"
 })
 export default class Resume extends Vue {
   private resume: JSONResume.Resume | null = null
-  private items: Object[] = [
+  private items: object[] = [
     {
       title: "About",
       icon: "fe-user",
