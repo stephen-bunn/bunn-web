@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Stephen Bunn",
-    "label": "Software Developer",
+    "label": "Full Stack Designer and Developer",
     "picture": "https://gravatar.com/avatar/02651d15ffdc3bb8e7cb4d20b33b7f1c?s=512",
     "email": "stephen@bunn.io",
     "phone": "(252) 955-9105",
     "website": "http://stephen.bunn.io/",
-    "summary": "Stephen is an experienced Python developer with a specialty in code design and data structure. He has earned his Masters degree in Computer Science from Appalachian State University over the period of 4 years. During this time he has worked as a researcher in the areas of package dependency management and natural language analysis. He also worked on data gathering, management, and reporting software for Appalachian State University focused on the data provided from sustainable endpoints such as solar panel arrays, windmills, energy gauges, and many others. Following his education, he joined Sensus as a developer specializing in Python development and code structure focused on automating and improving faulty business practices and processes. Outside of work he finds himself enjoying preparing new foods, discovering new music, and contributing to open-source projects.",
+    "summary": "Stephen is an experienced full-stack developer with a specialty in code design and data structure. He has earned his Masters degree in Computer Science from Appalachian State University over the period of 4 years. During this time he has worked as a researcher in the areas of package dependency management and natural language analysis. He also worked on data gathering, management, and reporting software for Appalachian State University focused on the data provided from sustainable endpoints such as solar panel arrays, windmills, energy gauges, and many others. Following his education, he joined Sensus as a developer specializing in Python development and code structure focused on automating and improving faulty business practices and processes. Outside of work he finds himself enjoying preparing new foods, discovering new music, and contributing to open-source projects.",
     "location": {
       "address": "1800 Wheelwright Place, Apt. #308",
       "postalCode": "27519",
@@ -48,7 +48,7 @@
       "position": "Python Developer",
       "website": "https://sensus.com/",
       "startDate": "2017-04-14",
-      "summary": "Lead development on a data warehousing solution interacting with many different data sources. Contributed to the design and development of an in-house data reporting web application providing insights and analytics into buisiness practices and processes.",
+      "summary": "Lead design and development on a full-stack platform for customer facing applications. These applications vastly improved the process of providing the customer with status tracking for various company-centric tasks and an improved interface for submitting and interacting with product returns. Also lead development on a data warehousing solution interacting with many different data sources. Contributed to the design and development of an in-house data reporting web application providing insights and analytics into buisiness practices and processes.",
       "highlights": []
     },
     {
@@ -85,6 +85,15 @@
       "startDate": "2014-04-07",
       "endDate": "2014-08-07",
       "summary": "Imaged and distributed statewide computer systems for the NC Division of Motor Vehicles. Helped with the implementation of a new security protocol for the Triangle Transportation Management Center.",
+      "highlights": []
+    },
+    {
+      "company": "Carney & Co",
+      "position": "Intern",
+      "website": "http://carneyco.com/",
+      "startDate": "2011-12-01",
+      "endDate": "2013-03-21",
+      "summary": "Managed the upkeep of several simple file servers. Provided customer service to clients. Contributed research for several marketing and political projects, including a statewide homeschool convention and a North Carolina House of Representative candidate’s campaign.",
       "highlights": []
     }
   ],
@@ -152,11 +161,11 @@
   "skills": [
     {
       "name": "Operating Systems",
-      "keywords": ["Linux", "OS X", "Windows"]
+      "keywords": ["Linux", "OSX", "Windows"]
     },
     {
       "name": "Deployment",
-      "keywords": ["Docker", "VMWare"]
+      "keywords": ["Docker", "VMWare", "Kubernetes"]
     },
     {
       "name": "Version Control Systems",
@@ -168,15 +177,15 @@
     },
     {
       "name": "Software Development",
-      "keywords": ["Python", "MongoDB", "RethinkDB", "SQL", "Java", "C", "Ruby", "Php"]
+      "keywords": ["Python", "Postgres", "SQL", "Java", "C", "Ruby", "Php"]
     },
     {
       "name": "API Development",
-      "keywords": ["Python", "REST", "JSON", "XML"]
+      "keywords": ["Python", "NodeJS", "REST", "JSON", "XML", "GraphQL"]
     },
     {
       "name": "Web Development",
-      "keywords": ["HTML", "CSS", "SCSS", "JS"]
+      "keywords": ["HTML", "CSS", "SCSS", "JS", "TS"]
     },
     {
       "name": "Web Frameworks",
