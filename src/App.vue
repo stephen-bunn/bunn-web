@@ -12,7 +12,16 @@
         //-   v-icon(left) fe-box
         //-   span Projects
       v-spacer
-      template(v-for="(profile, index) in $resume.basics.profiles")
+      v-menu(offset-y v-if="$vuetify.breakpoint.mdAndDown")
+        template(v-slot:activator="{ on }")
+          v-btn(icon v-on="on")
+            v-icon mdi-dots-vertical
+        v-list
+          v-list-tile(tag="a" v-for="(profile, index) in $resume.basics.profiles" :key="`profile-${index}`" :href="profile.url" target="_blank")
+            v-list-tile-action
+              v-icon(color="black") {{ profileIcons[profile.network.toLowerCase()] }}
+            v-list-tile-title {{ profile.network }}
+      template(v-for="(profile, index) in $resume.basics.profiles" v-if="$vuetify.breakpoint.lgAndUp")
         v-btn(icon flat :key="`profile-${index}`" :href="profile.url" target="_blank")
           v-icon {{ profileIcons[profile.network.toLowerCase()] }}
     v-content
@@ -68,6 +77,6 @@ export default class App extends Vue {
 </script>
 
 <style lang="stylus">
-@import '~@icon/feather/feather.css';
-@import '~@/assets/styles/main';
+@import "~@icon/feather/feather.css"
+@import "~@/assets/styles/main"
 </style>
