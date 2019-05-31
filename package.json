@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "deploy:prod": "surge ./dist bunn.io; surge ./dist stephen.bunn.io"
   },
   "dependencies": {
     "@icon/feather": "^1.1.0-alpha.2",
@@ -47,6 +48,7 @@
     "pug-plain-loader": "^1.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "surge": "^0.21.0",
     "typescript": "^3.4.3",
     "vue-cli-plugin-vuetify": "^0.5.0",
     "vue-template-compiler": "^2.5.21",

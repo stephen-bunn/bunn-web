@@ -37,7 +37,7 @@
           v-card(flat).transparent
             v-card-title(primary-title)
                 v-icon(large left color="black") fe-globe
-                span.display-1.text-uppercase.font-weight-bold Langauges
+                span.display-1.text-uppercase.font-weight-bold Languages
             v-card-text
               resume-language(v-for="(language, index) in resume.languages" :key="`language-${index}`" :language="language")
 
