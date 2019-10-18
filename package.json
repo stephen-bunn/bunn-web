@@ -18,7 +18,7 @@
     "gravatar": "^1.8.0",
     "helpful-decorators": "^2.0.4",
     "js-cookie": "^2.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "moment": "^2.24.0",
     "register-service-worker": "^1.6.2",
     "roboto-fontface": "*",
